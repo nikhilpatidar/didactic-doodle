@@ -6,6 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
+   <!-- Bootstrap core CSS -->
+   <link href="demo-template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- Moovie CSS Style -->
+   <link rel="stylesheet" type="text/css" href="css/moovie.css">
+ 
+   <!-- GFonts -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"> 
+ 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="nav.js" type="text/javascript"></script>
 </head>
@@ -31,6 +41,49 @@
       </nav>
     </div>
   </section>
+  <!-- Video player starts from here -->
+    <!-- Page Content -->
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-lg-12 text-center">
+             <div style='max-width: 900px; position: relative; margin: 0 auto; margin-top: 0px; margin-top: 0px; margin-top: 43px;'>
+                <img src="demo-template/images/moovie_white.png" style="max-width: 214px;">
+                <p style="margin-bottom: 49px; font-size: 28pt; color: white; font-family: Montserrat;">Media player made for movies</p>
+              </div>
+              
+              <div style='max-width: 800px; position: relative; margin: 0 auto; margin-top: 0px; margin-top: 64px;'>
+                  <video id="example" poster="https://raw.githubusercontent.com/BMSVieira/moovie.js/main/demo-template/images/poster.png">
+                      <source src="https://mooviehosted.000webhostapp.com/trailer.mp4" type="video/mp4">
+                      <track kind="captions" label="Portuguese" srclang="pt" src="https://raw.githubusercontent.com/BMSVieira/moovie.js/main/demo-template/subtitles/pt.vtt">
+                      <track kind="captions" label="English" srclang="en" src="https://raw.githubusercontent.com/BMSVieira/moovie.js/main/demo-template/subtitles/en.vtt">
+                      <track kind="captions" label="French" srclang="en" src="https://raw.githubusercontent.com/BMSVieira/moovie.js/main/demo-template/subtitles/french.srt">
+                      Your browser does not support the video tag.
+                  </video>
+
+              </div>
+        </div>
+      </div>
+    </div>
+    <!-- Moovie JS Core -->
+    <script src="js/moovie.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+              var demo1 = new Moovie({
+                selector: "#example",
+                dimensions: {
+                     width: "100%"
+                },
+                config: {
+                    storage: {
+                       captionOffset: false,
+                       playrateSpeed: false,
+                       captionSize: false
+                    }
+                }
+              });
+      });
+    </script>
   <!-- Footer starts from here -->
   <footer>
     <div class="wrapper">
