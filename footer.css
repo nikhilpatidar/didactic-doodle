@@ -67,14 +67,14 @@ html {
   
   /* end sticky footer stuff from css-tricks.com */
   
-  @-webkit-keyframes dot-move {
+  /* @-webkit-keyframes dot-move {
     from {
       background-position: 0 0;
     }
     to {
       background-position: 0 -100px;
     }
-  }
+  } */
   
   .fade-top {
     position: absolute;
