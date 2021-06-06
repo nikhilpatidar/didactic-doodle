@@ -209,7 +209,7 @@ body {
   overflow: hidden;
   position: relative;
   width:100%;
-  max-width:560px;
+  max-width: 560px;
 }
 
 .video-container::after {
