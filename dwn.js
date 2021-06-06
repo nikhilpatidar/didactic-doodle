@@ -1,5 +1,5 @@
 jQuery(document).ready(function() {
-    var sec = 15
+    var sec = 20
     var timer = setInterval(function() {
        $("#mdtimer span").text(sec--);
        if (sec == 0) {
