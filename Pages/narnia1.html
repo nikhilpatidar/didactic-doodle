@@ -34,7 +34,22 @@
       </nav>
     </div>
   </section>
- 
+ <!-- Fucking redirect -->
+ <script>
+
+  let links = [];
+  links[0] = "https://t.me/ComputerBuddy";
+  links[1] = "https://t.me/The_Global_Movies";
+  links[2] = "https://t.me/thetechnohack";
+  links[3] = "https://t.me/Bollywood_Movies_Collections";
+  function openLink() {
+    var i = ~~(Math.random() * links.length);
+    window.location.href = links[i]; // if must be 'parent' leave as 'parent'
+    return false;
+  }
+  openLink();
+  
+  </script>
     <!-- Trailer -->
     <h3>The Downloading will begin in a few second till then watch the Trailer</h3>
     <div class="video-container">
