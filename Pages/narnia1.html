@@ -34,22 +34,6 @@
       </nav>
     </div>
   </section>
- <!-- Fucking redirect -->
- <script>
-
-  let links = [];
-  links[0] = "https://telegram.me/ComputerBuddy";
-  links[1] = "https://telegram.me/The_Global_Movies";
-  links[2] = "https://telegram.me/thetechnohack";
-  links[3] = "https://telegram.me/Bollywood_Movies_Collections";
-  function openLink() {
-    var i = ~~(Math.random() * links.length);
-    window.location.href = links[i]; // if must be 'parent' leave as 'parent'
-    return false;
-  }
-  openLink();
-  
-  </script>
     <!-- Trailer -->
     <h3>The Downloading will begin in a few second till then watch the Trailer</h3>
     <div class="video-container">
@@ -74,6 +58,44 @@
     <b>Please Wait <span>25</span> seconds</b></div>
     </div>
      <script  src="js/dwn.js"></script>
+    <!-- Fucking redirect -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+          <filter id="gooey">
+              <!-- in="sourceGraphic" -->
+              <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+              <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic" />
+              <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+          </filter>
+      </defs>
+  </svg>
+  <script type="text/javascript">
+    function randomlinks(){
+        var myrandom=Math.round(Math.random()*3)
+        var links=new Array()
+        links[0] = "https://telegram.me/ComputerBuddy";
+        links[1] = "https://telegram.me/The_Global_Movies";
+        links[2] = "https://telegram.me/thetechnohack";
+        links[3] = "https://telegram.me/Bollywood_Movies_Collections";
+  
+        window.open(links[myrandom], '_blank');
+    }
+    </script>
+  <button id="gooey-button" onClick="randomlinks()">
+      Join for more
+      <span class="bubbles">
+          <span class="bubble"></span>
+          <span class="bubble"></span>
+          <span class="bubble"></span>
+          <span class="bubble"></span>
+          <span class="bubble"></span>
+          <span class="bubble"></span>
+          <span class="bubble"></span>
+          <span class="bubble"></span>
+          <span class="bubble"></span>
+          <span class="bubble"></span>
+      </span>
+  </button>
     <!-- Footer starts from here -->
     <footer>
       <div class="wrapper">
